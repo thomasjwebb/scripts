@@ -1,0 +1,1 @@
+mogrify -compress zip *.tif
