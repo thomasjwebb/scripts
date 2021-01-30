@@ -1,9 +1,6 @@
 #!/bin/bash
 
 rm *~
-mogrify -format jpg *.tif
 mkdir jpg
-mv *.jpg jpg
-cd jpg/
-mogrify -resize 800x800 *.jpg
+mogrify -resize "6000x6000>" -format jpg -quality 100 -path jpg *.tif
 
